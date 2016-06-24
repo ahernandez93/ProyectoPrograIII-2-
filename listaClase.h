@@ -1,17 +1,17 @@
-#ifndef LISTADOBLEMENTEENLAZADA_H
-#define LISTADOBLEMENTEENLAZADA_H
+#ifndef listaClase_H
+#define listaClase_H
 #include "Curso.h"
 
-class ListaDoblementeEnlazada
+class listaClase
 {
     public:
-        ListaDoblementeEnlazada();
-        virtual ~ListaDoblementeEnlazada();
+        listaClase();
+        virtual ~listaClase();
         void insertarAlInicio(Curso *);
         void insertar(int, const char *, int, const char*, int, const char *, int);
         void insertarAlFinal(Curso *);
         void mostrarLista();
-        Curso * buscarCurso(int);
+        bool buscarCurso(int);
         void guardarArchivoAleatorio();
         void leerArchivoAleatorio();
         void agregar(Curso *);
@@ -24,4 +24,4 @@ class ListaDoblementeEnlazada
         char nombreArchivo[30];
 };
 
-#endif // LISTADOBLEMENTEENLAZADA_H
+#endif // listaClase_H

@@ -4,7 +4,7 @@
 #include "clase.h"
 #include <iostream>
 #include "laboratorio.h"
-#include "listadoblementeenlazada.h"
+#include "listaClase.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -27,15 +27,15 @@ void MainWindow::on_pushButton_clicked()
 
     Curso * curso3 = new Clase(3,"Programacion V",10,"2pm",10,"Allan Hernandez",6);
 
-        ListaDoblementeEnlazada * lista = new ListaDoblementeEnlazada();
-        /*lista->insertarAlFinal(curso1);
-        lista->insertarAlFinal(curso2);
-        lista->insertarAlFinal(curso3);*/
+        listaClase * lista = new listaClase();
+        //lista->insertarAlFinal(curso1);
+        //lista->insertarAlFinal(curso2);
+        //lista->insertarAlFinal(curso3);
 
         lista->leerArchivoAleatorio();
         lista->mostrarLista();
 
-        //lista->guardarArchivoAleatorio();
+        lista->guardarArchivoAleatorio();
 
         delete curso1;
         delete curso2;
